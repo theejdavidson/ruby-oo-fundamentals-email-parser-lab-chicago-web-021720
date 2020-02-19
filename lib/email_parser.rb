@@ -12,7 +12,8 @@ class EmailAddressParser
   
   def parse 
     delimiters = [", ", " "]
-    self.emails.split(Regexp.union(delimiters))
+    arr = self.emails.split(Regexp.union(delimiters))
+    
   end
   
 end
