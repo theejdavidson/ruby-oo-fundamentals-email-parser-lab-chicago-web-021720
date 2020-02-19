@@ -13,7 +13,7 @@ class EmailAddressParser
   def parse 
     delimiters = [", ", " "]
     arr = self.emails.split(Regexp.union(delimiters))
-    
+    arr = arr.uniq
   end
   
 end
